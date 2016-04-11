@@ -1,0 +1,35 @@
+{
+  "name": "Bring",
+  "version": "0.0.1",
+  "description": "Global functions for your window",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernysans/bring.git"
+  },
+  "keywords": [
+    "bring",
+    "erny",
+    "sans",
+    "erny",
+    "sans",
+    "js",
+    "javascript",
+    "window",
+    "responsive"
+  ],
+  "author": "Erny Sans <c@erny.co> (http://erny.co)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ernysans/bring/issues"
+  },
+  "homepage": "https://github.com/ernysans/bring#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "jshint-stylish": "^2.1.0"
+  }
+}
