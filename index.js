@@ -30,8 +30,8 @@ module.exports = {
     // ====================================================================================== //
     screenDensity: function() {
 
-        var retina = ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 75.6dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)').matches)) || (window.devicePixelRatio && window.devicePixelRatio > 2)) && /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
-        var hd = (window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches)) || (window.devicePixelRatio && window.devicePixelRatio > 1.3);
+        var retina = ((global.matchMedia && (global.matchMedia('only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 75.6dpcm)').matches || global.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)').matches)) || (global.devicePixelRatio && global.devicePixelRatio > 2)) && /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+        var hd = (global.matchMedia && (global.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || global.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches)) || (global.devicePixelRatio && global.devicePixelRatio > 1.3);
 
         if (retina) return 'retina'; // is Retina
         else if (hd) return 'hd'; // is High Density
@@ -43,8 +43,8 @@ module.exports = {
     // ====================================================================================== //
     screenSize: function(type){
 
-        var w = Math.max(window.innerWidth || document.documentElement.clientWidth || 0); // window width
-        var h = Math.max(window.innerHeight || document.documentElement.clientHeight || 0); // window height
+        var w = Math.max(global.innerWidth || document.documentElement.clientWidth || 0); // window width
+        var h = Math.max(global.innerHeight || document.documentElement.clientHeight || 0); // window height
 
         if (type === 'bootstrap')
             if (w >= 1200) return 'xl'; // Extra large screens
