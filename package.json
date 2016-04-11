@@ -1,5 +1,5 @@
 {
-  "name": "Bring",
+  "name": "lend",
   "version": "0.0.1",
   "description": "Global functions for your window",
   "main": "index.js",
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ernysans/bring.git"
+    "url": "git+https://github.com/ernysans/lend.git"
   },
   "keywords": [
-    "bring",
+    "lend",
     "erny",
     "sans",
     "erny",
@@ -24,12 +24,9 @@
   "author": "Erny Sans <c@erny.co> (http://erny.co)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ernysans/bring/issues"
+    "url": "https://github.com/ernysans/lend/issues"
   },
-  "homepage": "https://github.com/ernysans/bring#readme",
+  "homepage": "https://github.com/ernysans/lend#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-jshint": "^2.0.0",
-    "jshint-stylish": "^2.1.0"
   }
 }

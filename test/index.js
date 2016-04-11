@@ -6,9 +6,9 @@
 //};
 
 
-var bring = require('../index');
+var lend = require('../index');
 
-//bring();
+//lend();
 
-console.log(bring.sayHelloInEnglish());
-console.log(bring.sayHelloInSpanish());
+console.log(lend.sayHelloInEnglish());
+console.log(lend.sayHelloInSpanish());
