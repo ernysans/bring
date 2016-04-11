@@ -1,6 +1,6 @@
 {
   "name": "lend",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Global functions for your window",
   "main": "index.js",
   "scripts": {
