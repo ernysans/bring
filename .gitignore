@@ -54,6 +54,3 @@ gulpfile.js
 
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
-
-## Espresso
-bring.esproj/
