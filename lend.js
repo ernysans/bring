@@ -1,3 +1,7 @@
+// =========================================== //
+// Lend -- by Erny Sans ================== //
+// =========================================== //
+
 'use strict';
 
 // Export Module ======================================== //
@@ -5,24 +9,6 @@ module.exports = {
 
     test: function() {
         return "HELLO";
-    },
-
-    // ====================================================================================== //
-    // Debounce ============================================================================= //
-    // ====================================================================================== //
-    debounce: function(func, wait, immediate) {
-        var timeout;
-        return function() {
-            var context = this, args = arguments;
-            var later = function() {
-                timeout = null;
-                if (!immediate) func.apply(context, args);
-            };
-            var callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-            if (callNow) func.apply(context, args);
-        };
     },
 
     // ====================================================================================== //
@@ -99,7 +85,5 @@ module.exports = {
 
         return (navigator.language || navigator.userLanguage || navigator.browserLanguage) ? navigator.language : navigator.userLanguage;
     }
-
-
 
 };

@@ -1,8 +1,8 @@
 {
   "name": "lend",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Global functions for your window",
-  "main": "index.js",
+  "main": "lend.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,8 +12,6 @@
   },
   "keywords": [
     "lend",
-    "erny",
-    "sans",
     "erny",
     "sans",
     "js",
