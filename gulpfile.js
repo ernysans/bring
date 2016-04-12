@@ -18,7 +18,7 @@ gulp.task('umd', function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('minify', function() {
+gulp.task('minify', ['umd'], function() {
   gulp.src('./build/lend.js')
     .pipe(minify({
         ext:{
